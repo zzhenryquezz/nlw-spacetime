@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "prisma": "^4.14.0",
+    "tsx": "^3.12.7"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.14.0",
+    "fastify": "^4.17.0"
+  }
+}

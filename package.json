@@ -1,0 +1,19 @@
+{
+  "name": "spacetime",
+  "license": "MIT",
+  "scripts": {
+    "lint": "npm -ws --if-present run lint -- --fix "
+  },
+  "workspaces": [
+    "packages/server",
+    "packages/web",
+    "packages/mobile"
+  ],
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^20.1.7",
+    "eslint": "^8.40.0",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "typescript": "^5.0.4"
+  }
+}
