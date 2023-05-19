@@ -1,0 +1,9 @@
+# Use rest client extension to test the api using this file
+
+// @name List
+GET http://localhost:3333/memories
+Authorization: Bearer {{$dotenv HTTP_TOKEN}}
+
+### @name GetById
+GET http://localhost:3333/memories/1
+Authorization: Bearer {{$dotenv HTTP_TOKEN}}
