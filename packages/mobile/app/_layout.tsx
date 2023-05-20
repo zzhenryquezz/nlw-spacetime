@@ -47,11 +47,11 @@ export default function DefaultLayout(){
             <StyledStripes className='absolute left-2' />
             <StatusBar style="light" translucent />
 
-            <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: 'transparent' } }}>
+            <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: 'transparent' }, animation: 'fade' }}>
                 
                 <Stack.Screen name="index" redirect={isAuthenticated}  />                
-                <Stack.Screen name="new"  />
                 <Stack.Screen name="memories"  />
+                <Stack.Screen name="new"  />
 
             </Stack>
 

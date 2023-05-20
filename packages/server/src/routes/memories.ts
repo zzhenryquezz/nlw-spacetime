@@ -22,6 +22,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
       id: m.id,
       coverUrl: m.coverUrl,
       excerpt: m.content.slice(0, 115) + '...',
+      createdAt: m.createdAt,
     }))
   })
 
