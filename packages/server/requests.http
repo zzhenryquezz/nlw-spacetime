@@ -7,3 +7,14 @@ Authorization: Bearer {{$dotenv HTTP_TOKEN}}
 ### @name GetById
 GET http://localhost:3333/memories/1
 Authorization: Bearer {{$dotenv HTTP_TOKEN}}
+
+### @name Upload
+POST http://localhost:3333/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="1.jpeg"
+Content-Type: image/png
+
+< ./samples/1.jpeg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
