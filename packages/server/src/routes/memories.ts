@@ -52,7 +52,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
 
     const memory = await prisma.memory.create({
       data: {
-        userId: 'a8f3e1c5-d1f1-46fd-af71-13f7fd4400ed',
+        userId: request.user.sub,
         content: payload.content,
         coverUrl: payload.coverUrl,
         isPublic: payload.isPublic,
